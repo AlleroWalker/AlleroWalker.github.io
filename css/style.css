@@ -91,7 +91,6 @@ body {
 }
 .my_info{
     height: 100%;
-    max-height: 715px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -101,6 +100,7 @@ body {
 
 .container_self{
     max-width: 715px;
+    height: 100%;
 }
 
 .container_self h2{
@@ -134,6 +134,10 @@ body {
     color: #3f495a;
 }
 
+.info_button_cont{
+    margin-bottom: 100px;
+}
+
 .info_button{
     font-size: 17px;
     background: none;
@@ -141,6 +145,7 @@ body {
     border: 2px solid #6f707e;
     border-radius: 5px;
     padding: 5px 10px;
+    display: inline;
 }
 
 .info_button:before{
