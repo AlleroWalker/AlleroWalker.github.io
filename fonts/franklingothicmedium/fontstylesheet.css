@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Franklin Gothic Medium';
+    src: url;
+    src: local('ITC Franklin Gothic Std Medium Italic'), local('ITCFranklinGothicStd-MedIt'),
+        url('ITCFranklinGothicStd-MedIt.eot?#iefix') format('embedded-opentype'),
+        url('ITCFranklinGothicStd-MedIt.woff') format('woff'),
+        url('ITCFranklinGothicStd-MedIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
