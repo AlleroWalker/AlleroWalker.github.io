@@ -150,7 +150,7 @@ body {
 
 .info_button:before{
     content:'';
-    background: url(../img/download_png.png) center/100% no-repeat;
+    background: url(../img/download_icon.svg) center/100% no-repeat;
     width: 15px;
     height: 15px;
     display: inline-block;
