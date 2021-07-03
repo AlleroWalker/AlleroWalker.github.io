@@ -48,7 +48,7 @@ body {
     width: 100%;
     background: url(../img/boy_main.png) 90% 100%/auto 85% no-repeat, url(../img/backgr_main.jpg) 50% 50%/100% 100% no-repeat;
     display: block;
-    box-shadow: inset 0px -10px 20px  grey;
+    box-shadow: inset 0px -10px 20px grey;
 }
 
 .title__container {
@@ -72,12 +72,12 @@ body {
     margin-bottom: 30px;
 }
 
-.main_items h4{
+.main_items h4 {
     margin-bottom: 65px;
     font-size: 22px;
 }
 
-.main_btn{
+.main_btn {
     margin-right: 30px;
     color: #2c384a;
     border: 2px solid #2c384a;
@@ -86,11 +86,11 @@ body {
     font-size: 18px;
 }
 
-.main_btn:last-child{
+.main_btn:last-child {
     margin: 0;
 }
-.my_info{
-    height: 100%;
+
+.my_info {
     width: 100%;
     display: flex;
     align-items: center;
@@ -98,47 +98,45 @@ body {
     justify-content: center;
 }
 
-.container_self{
+.container_self {
     max-width: 715px;
     height: 100%;
 }
 
-.container_self h2{
-    display: inline-block;
+.container_self h2 {
     font-size: 33px;
     padding-bottom: 30px;
-    display: inline-block;
     text-transform: uppercase;
     margin-top: 95px;
 }
 
-.container_self h2:after{
+.container_self h2:after {
     content: "";
     display: block;
     width: 70px;
-    border-bottom: 4px solid #d17700;
+    border-bottom: 4px solid #db8655;
     margin: 30px auto 55px;
 }
 
-.info_boy_photo{
+.info_boy_photo {
     border: 0px solid #ccc;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 20px;
 }
 
-.my_self_info{
+.my_self_info {
     margin-bottom: 45px;
     font-size: 18px;
     text-align: left;
     color: #3f495a;
 }
 
-.info_button_cont{
+.info_button_cont {
     margin-bottom: 100px;
 }
 
-.info_button{
+.info_button {
     font-size: 17px;
     background: none;
     color: #6f707e;
@@ -148,14 +146,82 @@ body {
     display: inline;
 }
 
-.info_button:before{
-    content:'';
+.info_button:before {
+    content: '';
     background: url(../img/download_icon.svg) center/100% no-repeat;
     width: 15px;
     height: 15px;
     display: inline-block;
     margin-right: 5px;
 }
+
+.my_ability {
+    max-height: 520px;
+    width: 100%;
+    background: url(../img/Back_Main.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.main_container {
+    height: 100%;
+    max-height: 520px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.main_container h2 {
+    font-size: 33px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.main_container h2:after {
+    content: "";
+    display: block;
+    width: 70px;
+    border-bottom: 4px solid #db8655;
+    margin: 30px auto 100px;
+}
+
+
+.abylity_container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+.ability{
+    width: 100%;
+    max-width: 210px;
+    margin-bottom: 90px;
+}
+
+.ability img{
+    margin-bottom: 30px;
+}
+
+.ability h3{
+    color: #db8655;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
