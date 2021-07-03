@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Franklin Gothic Medium';
+    src: url('../fonts/franklingothicmedium/framd.ttf') format('truetype');
+}
+
+
+
+body {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 400;
+}
+
+.navig {
+    background-color: #344051;
+    height: 60px;
+    width: 100%;
+    color: #ffffff;
+    line-height: 60px;
+    display: flex;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 23px;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu_list {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.main {
+    height: calc(100% - 60px);
+    width: 100%;
+    background: url(../img/boy_main.png) 90% 100%/auto 85% no-repeat, url(../img/backgr_main.jpg) 50% 50%/100% 100% no-repeat;
+    display: block;
+    box-shadow: inset 0px -10px 20px grey;
+}
+
+.title__container {
+    width: 30%;
+    height: 100%;
+    max-height: 1000px;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2c384a;
+}
+
+.main_items {
+    display: block;
+    text-align: center;
+}
+
+.main_items h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.main_items h4 {
+    margin-bottom: 65px;
+    font-size: 22px;
+}
+
+.main_btn {
+    margin-right: 30px;
+    color: #2c384a;
+    border: 2px solid #2c384a;
+    padding: 10px 10px;
+    border-radius: 6%;
+    font-size: 18px;
+}
+
+.main_btn:last-child {
+    margin: 0;
+}
+
+.my_info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.container_self {
+    max-width: 715px;
+    height: 100%;
+}
+
+.container_self h2 {
+    font-size: 33px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    margin-top: 95px;
+}
+
+.container_self h2:after {
+    content: "";
+    display: block;
+    width: 70px;
+    border-bottom: 4px solid #db8655;
+    margin: 30px auto 55px;
+}
+
+.info_boy_photo {
+    border: 0px solid #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.my_self_info {
+    margin-bottom: 45px;
+    font-size: 18px;
+    text-align: left;
+    color: #3f495a;
+}
+
+.info_button_cont {
+    margin-bottom: 100px;
+}
+
+.info_button {
+    font-size: 17px;
+    background: none;
+    color: #6f707e;
+    border: 2px solid #6f707e;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline;
+}
+
+.info_button:before {
+    content: '';
+    background: url(../img/download_icon.svg) center/100% no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.my_ability {
+    width: 100%;
+    background: url(../img/Back_Main.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.main_container {
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main_container h2 {
+    font-size: 33px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.main_container h2:after {
+    content: "";
+    display: block;
+    width: 70px;
+    border-bottom: 4px solid #db8655;
+    margin: 30px auto 0px;
+}
+
+
+.abylity_container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ability{
+    width: 100%;
+    max-width: 210px;
+    margin-bottom:  90px;
+}
+
+.ability img{
+    margin: 100px auto 30px;
+}
+
+.ability h3{
+    color: #db8655;
+    margin-bottom: 10px;
+}
+
+.Case{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.Case p{
+    margin: 35px auto;
+}
+
+
+
+/* =========== Слайдер ===========*/
+.slider{
+    position: relative;
+    padding: 0px 50px;
+}
+
+.img_slide {
+    height: 600px;
+    width: 1170px;
+}
+
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 80px;
+}
+
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url('../img/Left.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url('../img/Right.svg') 0 0 / 100% no-repeat;
+}
+
+
+/* ======= Слайдер закончился ========= */
+
+
+
+
+
+
+
+
+
+
