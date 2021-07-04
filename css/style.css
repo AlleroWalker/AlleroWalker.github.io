@@ -165,7 +165,6 @@ body {
 }
 
 .main_container {
-    height: 100%;
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
@@ -209,23 +208,30 @@ body {
     margin-bottom: 10px;
 }
 
+.ability p {
+    font-size: 17px;
+    line-height: 1.2;
+}
+
 .Case{
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
 
-.Case p{
-    margin: 35px auto;
-}
 
+.case_main{
+    margin:  35px auto;
+}
 
 
 /* =========== Слайдер ===========*/
 .slider{
     position: relative;
     padding: 0px 50px;
+    margin-bottom: 30px;
 }
 
 .img_slide {
@@ -263,6 +269,128 @@ body {
 
 
 /* ======= Слайдер закончился ========= */
+
+
+.case_client{
+    display: flex;
+    justify-content: space-between;
+}
+
+.client_form{
+    height: 180px;
+    width: 210px;
+    text-align: left;
+    margin: 0px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.client_form p {
+    font-size: 17px;
+}
+
+.case_text{
+    width: 850px;
+    text-align: left;
+    margin-left: 45px;
+}
+
+.case_client h3{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.case_text h3{
+    text-transform: none;
+}
+
+.case_text p{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.case_btn{
+    margin-top: 20px;
+    padding: 10px 40px;
+    border: 1px solid #63b5ae;
+    background-color: #63b5ae;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    display: inline-flex;
+}
+
+
+
+.payment_form{
+     display: block;
+}
+
+.payment_form .main_container{
+    max-width: 910px;
+}
+
+.payment_form h2 {
+    font-size: 45px;
+    text-transform: none;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.payment_form h2:after{
+    content: none;
+    display: block;
+    width: 0;
+    border-bottom: 0;
+    margin: 0;
+}
+
+.payment_form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 45px 0px 20px;
+}
+
+.payment_form select{
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #eeeeee;
+    font-size: 17px;
+}
+
+.select_items{
+    height: 450px;
+    border-bottom: 3px solid #d1d1d1;
+}
+
+.result_colculate{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    font-size: 21px;
+    margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
