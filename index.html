@@ -117,19 +117,19 @@
             <h2>Расчёт стоимости</h2>
             <div class="select_items">
                 <h3>Тип сайта</h3>
-                <select name="site_type" id="13">
+                <select name="site_type" id="site_type1">
                     <option value="Пункт 1">Лендинг</option>
                     <option value="Пункт 2">Визитка</option>
                     <option value="Пункт 3">Магазин</option>
                 </select>
                 <h3>Дизайн</h3>
-                <select name="site_type" id="14">
+                <select name="site_type" id="site_type2">
                     <option value="Пункт 1">Минималистичный</option>
                     <option value="Пункт 2">Функциональный</option>
                     <option value="Пункт 3">Свой</option>
                 </select>
                 <h3>Адаптивность</h3>
-                <select name="site_type" id="15">
+                <select name="site_type" id="site_type3">
                     <option value="Пункт 1">Базовый вариант</option>
                     <option value="Пункт 2">Углублённый</option>
                     <option value="Пункт 3">Все устройства</option>
@@ -184,16 +184,23 @@
     </div>
     <div class="feedback">
         <div class="container_self">
-            <h2>Отзывы</h2>
-            <div>
-                <img src="#" alt="Photo">
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, amet odit. Ut, neque magnam aperiam iure at. Ex sequi, ullam aspernatur veritatis esse provident natus facilis. Distinctio ea cum quidem!</p>
-            <p>Александр, IT-директор УФАС</p>
-            <div class="slider_feed">
-                <input type="radio" name="slider4">
-                <input type="radio" name="slider4">
-                <input type="radio" name="slider4">
+           <h2>Отзывы</h2>
+            <div class="feed_slider">
+                <div class="feed_obj">
+                    <img src="img/feedback_man1.jpg" alt="Photo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, amet odit. Ut, neque magnam aperiam iure at. Ex sequi, ullam aspernatur veritatis esse provident natus facilis. Distinctio ea cum quidem!</p>
+                    <p><b>Александр</b>, IT-директор УФАС</p>
+                </div>
+                <div class="feed_obj">
+                    <img src="img/feedback_man1.jpg" alt="Photo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, amet odit. Ut, neque magnam aperiam iure at. Ex sequi, ullam aspernatur veritatis esse provident natus facilis. Distinctio ea cum quidem!</p>
+                    <p><b>Александр</b>, IT-директор УФАС</p>
+                </div>
+                <div class="feed_obj">
+                    <img src="img/feedback_man1.jpg" alt="Photo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, amet odit. Ut, neque magnam aperiam iure at. Ex sequi, ullam aspernatur veritatis esse provident natus facilis. Distinctio ea cum quidem!</p>
+                    <p><b>Александр</b>, IT-директор УФАС</p>
+                </div>
             </div>
         </div>
     </div>
@@ -201,43 +208,46 @@
         <div class="container_self">
             <h2>Мои контакты</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ea facere architecto dolorum id ipsam accusamus totam, est nam recusandae.</p>
-            <div class="contact_address">
-                <img src="#" alt="icon">
-                <p>Москва, Проспект Парижский 192/4</p>
+            <div class="contacts_my">
+                <div class="contact_address">
+                    <img src="img/geo.svg" alt="icon">
+                    <p>Москва, Проспект Парижский 192/4</p>
+                </div>
+                <div class="contact_email">
+                    <img src="img/konvert.svg" alt="icon">
+                    <p>info@companyname.com</p>
+                </div>
+                <div class="contact_phone">
+                    <img src="img/phone.svg" alt="icon">
+                    <p>+79999990000</p>
+                </div>
             </div>
-            <div class="contact_email">
-                <img src="#" alt="icon">
-                <p>info@companyname.com</p>
-            </div>
-            <div class="contact_phone">
-                <img src="#" alt="icon">
-                <p>+79999990000</p>
-            </div>
-
             <h3>Оставьте мне сообщение</h3>
             <form action="#">
-                <input type="text" name="clint_name" id="999" placeholder="Ваше имя">
-                <input type="text" name="clint_email" id="998" placeholder="email">
-                <textarea name="massage" id="1000" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
-                <input type="submit" value="Отправить">
+               <div class="form_text">
+                <input type="text" name="clint_name" id="clint_name" placeholder="Ваше имя">
+                <input type="text" name="clint_email" id="clint_email" placeholder="Email">
+                </div>
+                <textarea name="massage" id="massage1" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+                <input type="submit" id="submit1" value="Отправить">
                 <div class="social">
                     <a href="#" class="social_facebook">
-                        <img src="#" alt="icon">
+                        <img src="img/fb.svg" alt="icon">
                     </a>
                     <a href="#" class="social_twitter">
-                        <img src="#" alt="icon">
+                        <img src="img/tw.svg" alt="icon">
                     </a>
                     <a href="#" class="social_something">
-                        <img src="#" alt="icon">
+                        <img src="img/boll.svg" alt="icon">
                     </a>
                     <a href="#" class="social_github">
-                        <img src="#" alt="icon">
+                        <img src="img/hub.svg" alt="icon">
                     </a>
                     <a href="#" class="social_instagram">
-                        <img src="#" alt="icon">
+                        <img src="img/inst.svg" alt="icon">
                     </a>
                     <a href="#" class="social_linkedIn">
-                        <img src="#" alt="icon">
+                        <img src="img/lin.svg" alt="icon">
                     </a>
                 </div>
             </form>
@@ -245,10 +255,10 @@
     </div>
     <footer>
         <div class="map">
-            <iframe src="#"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d812908.2750594585!2d38.237230444377765!3d55.752194389163634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1625600656310!5m2!1sru!2sua" width="1920" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="div">
-            <p>Copyright©2021 by Алексей</p>
+        <div class="Copyright">
+            <span>Copyright©2021 by Алексей ()(*_*)()</span>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
