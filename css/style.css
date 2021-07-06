@@ -278,7 +278,7 @@ body {
 
 .client_form{
     height: 180px;
-    width: 210px;
+    width: 200px;
     text-align: left;
     margin: 0px 22px;
     display: flex;
@@ -318,7 +318,7 @@ body {
     text-transform: uppercase;
     border-radius: 5px;
     color: white;
-    display: inline-flex;
+    text-align: center;
 }
 
 
@@ -379,17 +379,44 @@ body {
 
 
 
+.statistic{
+    width: 100%;
+    background: url(../img/statistick_back.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 
+.statistic_info{
+    margin: 85px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
+.statistic_1{
+    width: 100%;
+    max-width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
 
+.statistic_1 img{
+    margin-bottom: 30px;
+}
 
+.statistic_1 span{
+    font-size: 37px;
+    margin-bottom: 30px;
+}
 
-
-
-
-
-
-
+.statistic_1 p{
+    font-size: 17px;
+    text-transform: uppercase;
+}
 
 
 
