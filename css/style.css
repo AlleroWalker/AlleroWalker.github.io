@@ -1,21 +1,22 @@
+/*Подключение шрифта*/
+
 @font-face {
     font-family: 'Franklin Gothic Medium';
     src: url('../fonts/franklingothicmedium/framd.ttf') format('truetype');
 }
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
 
-
-
+/* Описание всего тега Body */
 body {
     font-size: 16px;
     font-family: 'Franklin Gothic Medium';
     font-weight: 400;
 }
 
-main{
-    width: 100%;
-    height: 100%;
-}
-
+/* Стили для Header */
 .navig {
     background-color: #344051;
     height: 60px;
@@ -35,42 +36,116 @@ main{
 
 .logo {
     font-size: 23px;
+    line-height: 60px;
+    -webkit-animation: logodrive 1.2s ease forwards;
+    -o-animation: logodrive 1.2s ease forwards;
+    animation: logodrive 1.2s ease forwards;
 }
 
-.menu {
+/*  Анимация для logo  */
+@keyframes logodrive{
+    0%{
+        opacity: 0;
+        margin-left: -300px;
+    }
+
+    100%{
+        opacity: 1;
+
+    }
+}
+
+.navig_list {
     width: 50%;
     display: flex;
     justify-content: space-between;
 }
 
 
-.menu_list {
+.nav_item {
     color: #ffffff;
     text-transform: uppercase;
+    opacity: 0;
+    -webkit-animation: nav_item_drive 1s forwards;
+    -o-animation: nav_item_drive 1s forwards;
+    animation: nav_item_drive 1s forwards;
 }
 
-.main {
-    height: calc(100%);
+.navig_list .nav_item:nth-child(2){
+    animation-delay: 0.2s;
+}
+.navig_list .nav_item:nth-child(3){
+    animation-delay: 0.4s;
+}
+.navig_list .nav_item:nth-child(4){
+    animation-delay: 0.8s;
+}
+.navig_list .nav_item:nth-child(5){
+    animation-delay: 1s;
+}
+.navig_list .nav_item:nth-child(6){
+    animation-delay: 1.2s;
+}
+
+/*  Анимация для меню навигации  */
+
+@keyframes nav_item_drive{
+    0%{
+        opacity: 0;
+        margin-top: -100px;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.nav_item:hover{
+    color: orange;
+    top: 5%;
+    left: 5%;
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+    box-shadow: inset 0px -5px 5px #ffffff;
+    border-radius: 50%;
+}
+
+.nav_item:active{
+    color: fuchsia;
+    transform: scale(1.3);
+    transition: all 0.1s linear;
+}
+
+/* Закончился Header */
+
+/* Стили для основного блока main */
+main{
     width: 100%;
-    background: url(../img/boy_main.png) 90% 100%/auto 85% no-repeat, url(../img/backgr_main.jpg) 50% 50%/100% 100% no-repeat;
-    display: block;
+}
+
+
+/* Стили для класса .main_block (Первый блок)*/
+.main_block {
+    height: 98vh;
+    width: 100%;
+    background: url(../img/boy_main.png) 90% 100%/auto 85% no-repeat , url(../img/backgr_main.jpg) center/cover no-repeat;
     box-shadow: inset 0px -10px 20px grey;
 }
 
 .title__container {
     width: 30%;
-    height: 100%;
-    max-height: 1000px;
     margin-left: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: #2c384a;
 }
 
 .main_items {
-    display: block;
+    height: 100%;
     text-align: center;
+    margin: 400px auto;
 }
 
 .main_items h1 {
@@ -95,7 +170,9 @@ main{
 .main_btn:last-child {
     margin: 0;
 }
+/* Закончились стили класса .main_block (Первый блок)*/
 
+/* Начался блок .my_info*/
 .my_info {
     width: 100%;
     display: flex;
@@ -159,7 +236,9 @@ main{
     display: inline-block;
     margin-right: 5px;
 }
+/*  Закончился блок .my_info  */
 
+/*  Начался блок .my_ability*/
 .my_ability {
     width: 100%;
     background: url(../img/Back_Main.jpg) center/cover no-repeat;
@@ -217,7 +296,9 @@ main{
     font-size: 17px;
     line-height: 1.2;
 }
+/*  Закончился блок my_ability  */
 
+/*  Начался блок Case */
 .Case{
     margin-bottom: 100px;
     display: flex;
@@ -325,9 +406,9 @@ main{
     color: white;
     text-align: center;
 }
+/*  Закончился блок Case  */
 
-
-
+/*  Начался блок payment_form  */
 .payment_form{
      display: block;
 }
@@ -381,10 +462,10 @@ main{
     font-size: 21px;
     margin: 20px 0px;
 }
+/*  Закончился блок payment_form  */
 
 
-
-
+/*  Начался блок statistic  */
 .statistic{
     width: 100%;
     background: url(../img/statistick_back.jpg) center/cover no-repeat;
@@ -423,7 +504,10 @@ main{
     font-size: 17px;
     text-transform: uppercase;
 }
+/*  Закончился блок statistic  */
 
+
+/*  Начался блок feedback  */
 .feedback{
     width: 100%;
     display: flex;
@@ -473,7 +557,10 @@ main{
 .feed_slider .slick-dots li.slick-active button{
     background-color: #c96500;
 }
+/*  Закончился блок feedback  */
 
+
+/*  Начался блок  form_to_contacts  */
 .form_to_contacts{
     width: 100%;
     display: flex;
@@ -561,7 +648,10 @@ main{
     height: 28px;
     width: 28px;
 }
+/* Закончился блок form_to_contacts */
 
+
+/* Начался блок footer */
 .footer{
 
 }
