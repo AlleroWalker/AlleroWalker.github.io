@@ -16,6 +16,9 @@ body {
     font-weight: 400;
 }
 
+
+
+
 /* Стили для Header */
 .navig {
     background-color: #344051;
@@ -783,7 +786,7 @@ main{
 
 /* Начался блок footer */
 .footer{
-
+    overflow: hidden;
 }
 
 .Copyright{
