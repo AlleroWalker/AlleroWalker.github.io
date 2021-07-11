@@ -145,7 +145,7 @@ main{
 .main_items {
     height: 100%;
     text-align: center;
-    margin: 100% auto;
+    margin: 60% auto;
     transition: all 1.2s ease 0.1s;
     -webkit-animation: maindrive 3s ease forwards;
     -o-animation: maindrive 3s ease forwards;
