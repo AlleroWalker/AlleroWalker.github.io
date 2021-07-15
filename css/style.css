@@ -77,7 +77,6 @@ body {
 /* Стили для Header */
 .navig {
     background-color: #344051;
-    height: 60px;
     width: 100%;
     color: #ffffff;
     line-height: 60px;
@@ -87,7 +86,8 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: 100%;
+    max-width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -96,11 +96,11 @@ body {
 .logo {
     font-size: 23px;
     line-height: 60px;
-    transition: all 2s ease 1s;
+    transition: all 0.3 ease 0;
     opacity: 0;
-    -webkit-animation: logodrive 1.2s 1.5s ease forwards;
-    -o-animation: logodrive 1.2s 1.5s ease forwards;
-    animation: logodrive 1.2s 1.5s ease forwards;
+    -webkit-animation: logodrive 2s 1.5s ease forwards;
+    -o-animation: logodrive 2s 1.5s ease forwards;
+    animation: logodrive 2s 1.5s ease forwards;
 }
 
 /*  Анимация для logo  */
@@ -127,10 +127,10 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     opacity: 0;
-    transition: all 0.3s ease;
-    -webkit-animation: nav_item_drive 1s forwards;
-    -o-animation: nav_item_drive 1s 1.5s forwards;
-    animation: nav_item_drive 1s 1.5s forwards;
+    flex-wrap: nowrap;
+    -webkit-animation: nav_item_drive 1s 1.4s forwards;
+    -o-animation: nav_item_drive 1s 1.4s forwards;
+    animation: nav_item_drive 1s 1.4s forwards;
 }
 
 .navig_list .nav_item:nth-child(2){
@@ -148,6 +148,7 @@ body {
 .navig_list .nav_item:nth-child(6){
     animation-delay: 2.6s;
 }
+
 
 /*  Анимация для меню навигации  */
 
@@ -174,6 +175,24 @@ body {
     transform: scale(1.3);
     transition: all 0.1s ease;
 }
+
+@media (max-width:1100px){
+    .nav_item{
+        margin: auto 1%;
+        font-size: 14px;
+    }
+
+    .navig{
+        line-height: 40px;
+    }
+
+    .logo{
+        font-size: 19px;
+        line-height: 40px;
+    }
+}
+
+
 
 /* Закончился Header */
 
@@ -855,7 +874,6 @@ main{
     width: 100%;
     color: #ffffff;
 }
-
 
 
 
