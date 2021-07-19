@@ -86,7 +86,7 @@ body{
 
 .menu_nav{
     transition: 0.2s;
-    transform: translateY(100%);
+    transform: translateY(-100%);
     transform-origin: top center;
     opacity: 0;
     overflow: hidden;
