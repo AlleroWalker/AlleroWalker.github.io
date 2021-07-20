@@ -541,8 +541,13 @@ main{
 }
 
 .img_slide {
-    height: 600px;
-    width: 1170px;
+    height: auto;
+    max-width: 100%;
+}
+
+.img_slide img{
+    height: auto;
+    max-width: 100%;
 }
 
 .slick-track{
@@ -585,7 +590,10 @@ main{
 
 .case_client{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #fff;
+    height: 30%;
+    padding: 25px 0;
 }
 
 .client_form{
@@ -1086,6 +1094,31 @@ main{
         max-width: 90%;
         margin: 0 auto;
     }
+
+    .case_client{
+        height: 50%;
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 1%;
+    }
+
+    .client_form{
+        height: 19%;
+        width: 50%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .case_text{
+        height: 29%;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+     .social{
+        width: 100%;
+
+    }
 }
 
 @media (max-width: 576px){
@@ -1132,6 +1165,21 @@ main{
     }
 }
 
+@media (max-width: 500px){
+    .contacts_my{
+        margin: 20px auto;
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+    }
+    .contact_address{
+        margin-bottom: 20px;
+    }
+    .contact_email{
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 360px){
     .main_items{
         margin: 40% 0;
@@ -1155,9 +1203,6 @@ main{
         top: 7%;
         right: 6%;
     }
-    .Case{
-        display: none;
-    }
 
     .contacts_my{
         margin: 20px auto;
@@ -1170,11 +1215,6 @@ main{
     }
     .contact_email{
         margin-bottom: 20px;
-    }
-
-    .social{
-        width: 100%;
-
     }
 
 }
