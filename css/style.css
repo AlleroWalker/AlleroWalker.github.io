@@ -1095,15 +1095,16 @@ main{
         margin: 0 auto;
     }
 
+    .slider{
+        padding: 0px 0px;
+    }
     .case_client{
-        height: 50%;
         width: 100%;
         flex-direction: column;
         padding-bottom: 1%;
     }
 
     .client_form{
-        height: 19%;
         width: 50%;
         margin: 0 auto;
         align-items: center;
@@ -1111,9 +1112,12 @@ main{
     }
 
     .case_text{
-        height: 29%;
         width: 100%;
-        margin: 10px 0;
+        margin: 20px 0;
+    }
+    .slider .slick-arrow{
+        width: 30px;
+        height: 60px;
     }
 
      .social{
