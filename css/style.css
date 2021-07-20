@@ -1071,6 +1071,7 @@ main{
         top: 4%;
         right: 12%;
     }
+
 }
 
 
@@ -1119,25 +1120,48 @@ main{
         width: 30px;
         height: 60px;
     }
-
-     .social{
-        width: 100%;
-
+    .container_self{
+        max-width: 97%;
     }
+    .main_container{
+        max-width: 97%;
+    }
+
+    .form_to_contacts .container_self{
+        width: 97%;
+    }
+
+    #clint_name{
+        display: inline-block;
+        width: 47%;
+        margin: 0 auto;
+    }
+    #clint_email{
+        display: inline-block;
+        width: 47%;
+        margin: 0 auto;
+    }
+    #massage1{
+        display: block;
+        width: 95%;
+        margin: 0 2.5%;
+    }
+
+
 }
 
 @media (max-width: 576px){
     .title__container{
         display: inline-block;
-        background-color: rgba(194, 194, 194, 0.3);
+        background-color: rgba(194, 194, 194, 0.5);
         margin: 0 auto;
-        color: #fff;
         width: 100%;
         height: 100vh;
     }
-    .main_btn{
-        border-color: #fff;
+    .main_items{
+        margin: 50% 0px;
     }
+
     .my_info{
         width: 95%;
         margin: 0 auto;
@@ -1167,6 +1191,11 @@ main{
         display: block;
         width: 95%;
         margin: 0 2.5%;
+    }
+
+    .social{
+        width: 100%;
+        padding: 0 3%;
     }
 }
 
