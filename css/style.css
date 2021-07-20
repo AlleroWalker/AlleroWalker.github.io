@@ -1107,6 +1107,7 @@ main{
         width: 50%;
         margin: 0 auto;
         align-items: center;
+        text-align: center;
     }
 
     .case_text{
