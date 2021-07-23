@@ -1,5 +1,3 @@
-"use strict"
-
 $( document ).ready(function() {
     var preloader = document.getElementById('page-preloader');
     if (!preloader.classList.contains('done')) {
@@ -26,7 +24,7 @@ $( document ).ready(function() {
                 if (type > 3 || type < 1) {
                     alert("Ошибка!");
                     eddittype(type);
-                } else if (type--, type != typemas.length) {
+                } else if (--type) {
                     console.log(typemas[type]);
                 }
                 return type = typemas[type];
@@ -44,7 +42,7 @@ $( document ).ready(function() {
                 if (design > 3 || design < 1) {
                     alert("Ошибка!");
                     edditdesign(design);
-                } else if (design--, design != designmas.length) {
+                } else if (--design) {
                     console.log(designmas[design]);
                 }
                 return design = designmas[design];
@@ -62,7 +60,7 @@ $( document ).ready(function() {
                 if (adopt > 3 || adopt < 1) {
                     alert("Ошибка!");
                     edditadopt(adopt);
-                } else if (adopt--, adopt != adoptmas.length) {
+                } else if (--adopt) {
                     console.log(adoptmas[adopt]);
                 }
 
