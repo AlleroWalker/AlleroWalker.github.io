@@ -75,7 +75,7 @@ $( document ).ready(function() {
             alert(" Примерная цена за ваш заказа составит : " + listof + " Рублей");
             console.log(listof);
 
-        }, 3000)
+        }, 4000)
         if ($('#page-preloader').show()) {
             $('#page-preloader').hide();
         };
