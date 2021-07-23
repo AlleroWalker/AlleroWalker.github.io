@@ -317,9 +317,9 @@ main{
     margin: 60% auto;
     opacity: 0;
     transition: all 1.2s ease 0.1s;
-    -webkit-animation: maindrive 3s 1.5s ease forwards;
-    -o-animation: maindrive 3s 1.5s ease forwards;
-    animation: maindrive 3s 1.5s ease forwards;
+    -webkit-animation: maindrive 3s 1s ease forwards;
+    -o-animation: maindrive 3s 1s ease forwards;
+    animation: maindrive 3s 1s ease forwards;
 }
 
 .main_items h1 {
