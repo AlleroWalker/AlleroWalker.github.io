@@ -3,7 +3,7 @@ window.onload = function () {
         if (!preloader.classList.contains('done')) {
             preloader.classList.add('done');
 
-            function () {
+            function ask () {
 
 
                 var typemas = [500, 1000, 4000];
@@ -75,6 +75,8 @@ window.onload = function () {
                 alert(" Примерная цена за ваш заказа составит : " + listof + " Рублей");
                 console.log(listof);
 
-            }
+            };
+
+            ask(ask);
     };
 };
