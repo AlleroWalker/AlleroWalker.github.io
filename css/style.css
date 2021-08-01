@@ -11,9 +11,9 @@
 }
 
 
-a:visited{
+a, a:visited{
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 /* Описание всего тега Body */
@@ -100,6 +100,11 @@ body {
     -webkit-animation: logodrive 1.2s 1.5s ease forwards;
     -o-animation: logodrive 1.2s 1.5s ease forwards;
     animation: logodrive 1.2s 1.5s ease forwards;
+}
+
+.logo a, a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 /*  Анимация для logo  */
@@ -659,7 +664,6 @@ main{
 
 /*  Начался блок payment_form  */
 .payment_form{
-     display: block;
 }
 
 .payment_form .main_container{
@@ -669,8 +673,8 @@ main{
 .payment_form h2 {
     font-size: 45px;
     text-transform: none;
-    margin-top: 100px;
     text-align: center;
+    padding-top: 50px;
 }
 
 .payment_form h2:after{
