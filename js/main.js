@@ -41,44 +41,43 @@ let adopt = 0;
 
 let listof = 0;
 
-function finance(type){
+function finance(){
     listof = +type + +design + +adopt;
-    console.log(listof);
-//    $('span[id=ruselt2]').text('listof');
+    console.log(type);
+    console.log(design);
+    console.log(adopt);
     return listof;
 };
 
 $('select[id="site_type1"]').click(function eddittype() {
 
-    $('option[value]').click(function () {
+    $('option').click(function () {
         type = $(this).attr("value");
-        return finance(+type);
+        return type;
     });
-    console.log(+type);
-    console.log(listof);
+//    console.log(type);
 });
 
-//
+
 $('select[id="site_type2"]').click(function edditdesign() {
 
-    $('option[value]').click(function () {
+    $('option').click(function () {
         design = $(this).attr("value");
-        return finance(+design);
+        return design;
     });
-    console.log(+design);
-    console.log(listof);
+//    console.log(design);
 });
 
 
 
 $('select[id="site_type3"]').click(function edditadopt() {
 
-    $('option[value]').click(function () {
+    $('option').click(function () {
         adopt = $(this).attr("value");
-        return finance(+adopt);
+        return adopt;
     });
-    console.log(+adopt);
-    console.log(listof);
+//    console.log(adopt);
+    finance();
 });
 
 
