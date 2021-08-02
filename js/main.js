@@ -50,8 +50,8 @@ let listof = 0;
 function finance() {
     timeof = +typeTime + +designTime + +adoptTime;
     listof = +type + +design + +adopt;
-    $('#result1').text(timeof + " Дни");
-    $('#result2').text(listof + " Рублей");
+    $('#result1').text(timeof + " - Дни");
+    $('#result2').text(listof + " - Рублей");
     console.log(+timeof);
     console.log(+listof);
     return listof, timeof;
