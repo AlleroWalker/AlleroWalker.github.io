@@ -1,3 +1,5 @@
+"use strict"
+
 $(document).ready(function(){
     $('.slider').slick({
         arrows:true,
@@ -30,57 +32,57 @@ $('a[href^="#"]').click(function(){
 
 
 
-//$('option[value]').click(function () {
-//    let valVal = $(this).attr("value");
-//    console.log(valVal);
-//    let result = result => result + valVal;
-//    console.log(result);
-//});
 
 
 
+let type = 0;
+let design = 0;
+let adopt = 0;
 
+let listof = 0;
 
-            var type = 0;
-            var design = 0;
-            var adopt = 0;
+function finance(type){
+    listof = listof + type;
+    console.log(listof);
+//    $('span[id=ruselt2]').text('listof');
+    return listof;
+};
 
+$('select[id="site_type1"]').click(function eddittype() {
 
-            $('select[id="site_type1"]').click(function eddittype() {
-
-                $('option[value]').click(function () {
-                    let type = $(this).attr("value");
-                    return type = type;
-                });
-                console.log(type);
-            });
-            console.log(type);
-
-            $('select[id="site_type2"]').click(function edditdesign() {
-
-                $('option[value]').click(function () {
-                    let design = $(this).attr("value");
-                    return design;
-                });
-                console.log(design);
-            });
-
-
-
-            $('select[id="site_type3"]').click(function edditadopt() {
-
-                $('option[value]').click(function () {
-                    let adopt = $(this).attr("value");
-                    return adopt;
-                });
-                console.log(adopt);
-            });
-
-
+    $('option[value]').click(function () {
+        type = $(this).attr("value");
+        return finance(+type);
+    });
+    console.log(+type);
+    console.log(listof);
+});
 
 //
-//            var listof = type + design + adopt;
-//            alert(" Примерная цена за ваш заказа составит : " + listof + " Рублей");
-//            console.log(listof);
+$('select[id="site_type2"]').click(function edditdesign() {
+
+    $('option[value]').click(function () {
+        design = $(this).attr("value");
+        return finance(+design);
+    });
+    console.log(+design);
+    console.log(listof);
+});
+
+
+
+$('select[id="site_type3"]').click(function edditadopt() {
+
+    $('option[value]').click(function () {
+        adopt = $(this).attr("value");
+        return finance(+adopt);
+    });
+    console.log(+adopt);
+    console.log(listof);
+});
+
+
+
+
 
 
