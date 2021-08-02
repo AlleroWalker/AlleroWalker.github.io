@@ -39,7 +39,7 @@ let type = 0;
 let design = 0;
 let adopt = 0;
 
-let listof = 0;
+let listof = 500;
 
 function finance(){
     listof = +type + +design + +adopt;
@@ -47,6 +47,7 @@ function finance(){
     console.log(design);
     console.log(adopt);
     console.log(listof);
+    $('#result2').text(listof);
     return listof;
 };
 
@@ -80,7 +81,6 @@ $('select[id="site_type3"]').click(function edditadopt() {
 //    console.log(adopt);
     finance();
 });
-
 
 
 
