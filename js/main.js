@@ -39,35 +39,40 @@ let type = 0;
 let design = 0;
 let adopt = 0;
 
-let listof = 500;
+let typeTime = 0;
+let designTime = 0;
+let adoptTime = 0;
+
+let listof = 0;
+let timeof = 0;
 
 function finance(){
+    timeof = +typeTime + +designTime + +adoptTime;
     listof = +type + +design + +adopt;
-    console.log(type);
-    console.log(design);
-    console.log(adopt);
-    console.log(listof);
-    $('#result2').text(listof);
-    return listof;
+    $('#result1').text(timeof + " - Дни" );
+    $('#result2').text(listof + " - Рублей");
+    return listof, timeof;
 };
 
 $('select[id="site_type1"]').click(function eddittype() {
 
     $('#331, #332, #333').click(function () {
+        typeTime = $(this).attr("get-time");
         type = $(this).attr("value");
-        return type;
+        return type, typeTime;
     });
-//    console.log(type);
+    finance();
 });
 
 
 $('select[id="site_type2"]').click(function edditdesign() {
 
     $('#334, #335, #336').click(function () {
+        designTime = $(this).attr("get-time");
         design = $(this).attr("value");
-        return design;
+        return design, designTime;
     });
-//    console.log(design);
+    finance();
 });
 
 
@@ -75,10 +80,10 @@ $('select[id="site_type2"]').click(function edditdesign() {
 $('select[id="site_type3"]').click(function edditadopt() {
 
     $('#337, #338, #339').click(function () {
+        adoptTime = $(this).attr("get-time");
         adopt = $(this).attr("value");
-        return adopt;
+        return adopt, adoptTime;
     });
-//    console.log(adopt);
     finance();
 });
 
