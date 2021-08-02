@@ -42,7 +42,7 @@ let adopt = 0;
 let listof = 0;
 
 function finance(type){
-    listof = listof + type;
+    listof = +type + +design + +adopt;
     console.log(listof);
 //    $('span[id=ruselt2]').text('listof');
     return listof;
