@@ -46,12 +46,13 @@ function finance(){
     console.log(type);
     console.log(design);
     console.log(adopt);
+    console.log(listof);
     return listof;
 };
 
 $('select[id="site_type1"]').click(function eddittype() {
 
-    $('option').click(function () {
+    $('#331, #332, #333').click(function () {
         type = $(this).attr("value");
         return type;
     });
@@ -61,7 +62,7 @@ $('select[id="site_type1"]').click(function eddittype() {
 
 $('select[id="site_type2"]').click(function edditdesign() {
 
-    $('option').click(function () {
+    $('#334, #335, #336').click(function () {
         design = $(this).attr("value");
         return design;
     });
@@ -72,7 +73,7 @@ $('select[id="site_type2"]').click(function edditdesign() {
 
 $('select[id="site_type3"]').click(function edditadopt() {
 
-    $('option').click(function () {
+    $('#337, #338, #339').click(function () {
         adopt = $(this).attr("value");
         return adopt;
     });
