@@ -36,48 +36,54 @@ $('a[href^="#"]').click(function(){
 
 
 
+let type = 0;
+let design = 0;
+let adopt = 0;
 
+let typeTime = 0;
+let designTime = 0;
+let adoptTime = 0;
 
-    let type = 0;
-    let design = 0;
-    let adopt = 0;
+let timeof = 0;
+let listof = 0;
 
-    let typeTime = 0;
-    let designTime = 0;
-    let adoptTime = 0;
+function finance() {
+    timeof = +typeTime + +designTime + +adoptTime;
+    listof = +type + +design + +adopt;
+    $('#result1').text(timeof + " Дни");
+    $('#result2').text(listof + " Рублей");
+    console.log(+timeof);
+    console.log(+listof);
+    return listof, timeof;
+};
 
-    let timeof = 0;
-    let listof = 0;
-
-    function finance() {
-        timeof = +typeTime + +designTime + +adoptTime;
-        listof = +type + +design + +adopt;
-        $('#result1').text(timeof + " Дни");
-        $('#result2').text(listof + " Рублей");
-        console.log(+timeof);
-        console.log(+listof);
-        return listof, timeof;
-    };
-
-
+$('#site_type1').click(function () {
 
     $('#331, #332, #333').click(function () {
         typeTime = $(this).attr('get-time');
         type = $(this).attr('value');
         console.log(+typeTime);
         console.log(+type);
-        finance();
         return type, typeTime;
     });
+    finance();
+});
+
+
+$('#site_type2').click(function () {
 
     $('#334, #335, #336').click(function () {
         designTime = $(this).attr("get-time");
         design = $(this).attr("value");
         console.log(+designTime);
         console.log(+design);
-        finance();
+
         return design, designTime;
     });
+    finance();
+});
+
+$('#site_type3').click(function () {
 
     $('#337, #338, #339').click(function () {
         adoptTime = $(this).attr("get-time");
@@ -87,8 +93,8 @@ $('a[href^="#"]').click(function(){
         finance();
         return adopt, adoptTime;
     });
-
-
+      finance();
+});
 
 
 
