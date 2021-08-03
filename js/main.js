@@ -59,7 +59,7 @@ function finance() {
 
 $('#site_type1').on('change', function () {
 
-    $('#331, #332, #333').on('change',function () {
+    $('#331, #332, #333').on('click',function () {
         typeTime = $(this).attr('get-time');
         design = $(this).attr('value');
         console.log(+typeTime);
@@ -73,7 +73,7 @@ $('#site_type1').on('change', function () {
 
 $('#site_type2').on('change', function () {
 
-    $('#334, #335, #336').on('change',function () {
+    $('#334, #335, #336').on('click',function () {
         designTime = $(this).attr('get-time');
         design = $(this).attr('value');
         console.log(+designTime);
@@ -86,7 +86,7 @@ $('#site_type2').on('change', function () {
 
 $('#site_type3').on('change',function () {
 
-    $('#337, #338, #339').on('change', function () {
+    $('#337, #338, #339').on('click', function () {
         adoptTime = $(this).attr('get-time');
         adopt = $(this).attr('value');
         console.log(+adoptTime);
