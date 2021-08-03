@@ -57,25 +57,25 @@ function finance() {
     return listof, timeof;
 };
 
-$('#site_type1').on('click', function () {
+$('#site_type1').on('change', function () {
 
-    $('#331, #332, #333').click(function () {
-        typeTime = $(this).attr("get-time");
-        design = $(this).attr("value");
+    $('#331, #332, #333').on('change',function () {
+        typeTime = $(this).attr('get-time');
+        design = $(this).attr('value');
         console.log(+typeTime);
         console.log(+type);
 
-        return +type, +typeTime;
+        return type, typeTime;
     });
     finance();
 });
 
 
-$('#site_type2').on('click',function () {
+$('#site_type2').on('change', function () {
 
-    $('#334, #335, #336').click(function () {
-        designTime = $(this).attr("get-time");
-        design = $(this).attr("value");
+    $('#334, #335, #336').on('change',function () {
+        designTime = $(this).attr('get-time');
+        design = $(this).attr('value');
         console.log(+designTime);
         console.log(+design);
 
@@ -84,11 +84,11 @@ $('#site_type2').on('click',function () {
     finance();
 });
 
-$('#site_type3').on('click',function () {
+$('#site_type3').on('change',function () {
 
-    $('#337, #338, #339').click(function () {
-        adoptTime = $(this).attr("get-time");
-        adopt = $(this).attr("value");
+    $('#337, #338, #339').on('change', function () {
+        adoptTime = $(this).attr('get-time');
+        adopt = $(this).attr('value');
         console.log(+adoptTime);
         console.log(+adopt);
         finance();
