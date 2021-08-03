@@ -57,20 +57,21 @@ function finance() {
     return listof, timeof;
 };
 
-$('#site_type1').click(function () {
+$('#site_type1').on("change", function () {
 
     $('#331, #332, #333').click(function () {
-        typeTime = $(this).attr('get-time');
-        type = $(this).attr('value');
+        typeTime = $(this).attr("get-time");
+        design = $(this).attr("value");
         console.log(+typeTime);
         console.log(+type);
+
         return type, typeTime;
     });
     finance();
 });
 
 
-$('#site_type2').click(function () {
+$('#site_type2').on("change",function () {
 
     $('#334, #335, #336').click(function () {
         designTime = $(this).attr("get-time");
@@ -83,7 +84,7 @@ $('#site_type2').click(function () {
     finance();
 });
 
-$('#site_type3').click(function () {
+$('#site_type3').on("change",function () {
 
     $('#337, #338, #339').click(function () {
         adoptTime = $(this).attr("get-time");
