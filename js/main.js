@@ -33,9 +33,6 @@ $('a[href^="#"]').click(function(){
 
 
 
-
-
-
 let type = 0;
 let design = 0;
 let adopt = 0;
@@ -57,45 +54,31 @@ function finance() {
     return listof, timeof;
 };
 
-$('#site_type1').on('change', function () {
 
-    $('#331, #332, #333').on('click',function () {
-        typeTime = $(this).attr('get-time');
-        design = $(this).attr('value');
-        console.log(+typeTime);
-        console.log(+type);
-
-        return type, typeTime;
-    });
+$('#site_type1').on('change', function(){
+    type = $(this).val();
+    typeTime = $('#site_type1 :selected').attr('data-time');
+    console.log(type);
+    console.log(typeTime);
     finance();
 });
 
-
-$('#site_type2').on('change', function () {
-
-    $('#334, #335, #336').on('click',function () {
-        designTime = $(this).attr('get-time');
-        design = $(this).attr('value');
-        console.log(+designTime);
-        console.log(+design);
-
-        return design, designTime;
-    });
+$('#site_type2').on('change', function(){
+    design = $(this).val();
+    designTime = $('#site_type2 :selected').attr('data-time');
+    console.log(design);
+    console.log(designTime);
     finance();
 });
 
-$('#site_type3').on('change',function () {
-
-    $('#337, #338, #339').on('click', function () {
-        adoptTime = $(this).attr('get-time');
-        adopt = $(this).attr('value');
-        console.log(+adoptTime);
-        console.log(+adopt);
-        finance();
-        return adopt, adoptTime;
-    });
-      finance();
+$('#site_type3').on('change', function(){
+    adopt = $(this).val();
+    adoptTime = $('#site_type3 :selected').attr('data-time');
+    console.log(adopt);
+    console.log(adoptTime);
+    finance();
 });
+
 
 
 
