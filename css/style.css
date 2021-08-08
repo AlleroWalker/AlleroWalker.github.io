@@ -76,7 +76,16 @@ body {
 
 /* Стили для Header */
 .navig {
-    background-color: #344051;
+    background: -moz-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(30, 87, 153, 1) 19%, rgba(41, 137, 216, 1) 49%, rgba(30, 87, 153, 1) 81%, rgba(30, 87, 153, 1) 99%, rgba(30, 87, 153, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(30, 87, 153, 1) 19%, rgba(41, 137, 216, 1) 49%, rgba(30, 87, 153, 1) 81%, rgba(30, 87, 153, 1) 99%, rgba(30, 87, 153, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 87, 153, 1) 0%, rgba(30, 87, 153, 1) 19%, rgba(41, 137, 216, 1) 49%, rgba(30, 87, 153, 1) 81%, rgba(30, 87, 153, 1) 99%, rgba(30, 87, 153, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#001e5799', GradientType=0);
+    /* IE6-9 */
+
+
     width: 100%;
     color: #ffffff;
     line-height: 60px;
@@ -95,13 +104,16 @@ body {
 .logo {
     font-size: 23px;
     line-height: 60px;
-    transition: all 2s ease 1s;
+    transition: all 0.5s linear;
     opacity: 0;
     -webkit-animation: logodrive 1.2s 1.5s ease forwards;
     -o-animation: logodrive 1.2s 1.5s ease forwards;
     animation: logodrive 1.2s 1.5s ease forwards;
 }
 
+.logo:hover{
+    transform: scale(1.3);
+}
 .logo a, a:visited {
     text-decoration: none;
     color: white;
@@ -132,9 +144,9 @@ body {
     text-transform: uppercase;
     opacity: 0;
     transition: all 0.3s ease;
-    -webkit-animation: nav_item_drive 1s forwards;
-    -o-animation: nav_item_drive 1s 1.5s forwards;
-    animation: nav_item_drive 1s 1.5s forwards;
+    -webkit-animation: nav_item_drive 1s 1.4s forwards;
+    -o-animation: nav_item_drive 1s 1.4s forwards;
+    animation: nav_item_drive 1s 1.4s forwards;
 }
 
 .navig_list .nav_item:nth-child(2){
@@ -144,13 +156,13 @@ body {
     animation-delay: 1.8s;
 }
 .navig_list .nav_item:nth-child(4){
-    animation-delay: 2.2s;
+    animation-delay: 2.0s;
 }
 .navig_list .nav_item:nth-child(5){
-    animation-delay: 2.4s;
+    animation-delay: 2.2s;
 }
 .navig_list .nav_item:nth-child(6){
-    animation-delay: 2.6s;
+    animation-delay: 2.4s;
 }
 
 /*  Анимация для меню навигации  */
@@ -166,10 +178,13 @@ body {
     }
 }
 
-.nav_item:hover{
-    color: orange;
+.nav_item:hover {
+    color: rgba(94, 242, 255, 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transform: scale(1.1);
-    box-shadow: inset 0px -5px 5px #ffffff;
+    box-shadow: inset 0px -5px 5px rgba(94, 242, 255, 100%);
     border-radius: 50%;
     transition: all 0.3s linear;
 }
@@ -302,7 +317,7 @@ main{
 .main_block {
     height: 100vh;
     width: 100%;
-    background: url(../img/boy_main.png) 90% 100%/auto 85% no-repeat , url(../img/backgr_main.jpg) center/cover no-repeat;
+    background: url(../img/boy_main.png) 90% 100%/auto 85% no-repeat , url(../img/Blue_Back.jpg) center/cover no-repeat;
     box-shadow: inset 0px -10px 20px grey;
 }
 
@@ -313,7 +328,7 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #2c384a;
+    color: #222246;
 }
 
 .main_items {
@@ -334,31 +349,47 @@ main{
 
 .main_items h4 {
     margin-bottom: 65px;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .main_btn {
-    margin-right: 30px;
-    color: #2c384a;
-    border: 2px solid #2c384a;
-    padding: 10px 10px;
-    border-radius: 6%;
-    font-size: 18px;
-    transition: all 0.3s ease;
+    position: relative;
     display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5%;
+    background-color: inherit;
+    margin-right: 40px;
+    transition: all 1s ease;
 }
 
 .main_btn:last-child {
     margin: 0;
 }
 
-.main_btn:hover{
-    color: #ffffff;
-    background-color: #344051;
-    transition: all 0.3s linear;
+.main_btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -7.5%;
+    left: -7.5%;
+    width: calc(100% + 15%);
+    height: calc(100% + 15%);
+    border-radius: 5%;
+    background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background-size: 200%;
+    animation: animateborder 3s ease infinite;
 }
 
-.main_btn:active{
+
+.main_btn:hover {
+    transform: scale(1.1);
+}
+
+
+.main_btn:active {
     transform: scale(1.3);
     transition: all 0.1s ease;
 }
@@ -366,14 +397,30 @@ main{
 
 
 /*  Анимация для main_items  */
-@keyframes maindrive{
-    0%{
+@keyframes maindrive {
+    0% {
         opacity: 0;
         margin-left: -1000px;
     }
-    100%{
+
+    100% {
         opacity: 1;
         margin-left: 0px;
+    }
+}
+
+
+@keyframes animateborder {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
     }
 }
 
@@ -393,6 +440,36 @@ main{
     height: 100%;
 }
 
+._anim-show  {
+    transform: translate(0px, -120%);
+    opacity: 0;
+    -webkit-transition: all 1s ease 0.5s;
+     -moz-transition: all 1s ease 0.5s;
+     -o-transition: all 1s ease 0.5s;
+     transition: all 1s ease 0.5s;
+}
+
+.anim-show._active,
+._active ._anim-show {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.title_my_info{
+    transform: translate( 0px, -120%);
+    opacity: 0;
+    -webkit-transition: all 1s ease 0.2s;
+     -moz-transition: all 1s ease 0.2s;
+     -o-transition: all 1s ease 0.2s;
+     transition: all 1s ease 0.2s;
+}
+
+.title_my_info._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
 .container_self h2 {
     font-size: 33px;
     text-transform: uppercase;
@@ -402,19 +479,33 @@ main{
 .container_self h2:after {
     content: "";
     display: block;
-    width: 70px;
-    border-bottom: 4px solid #db8655;
+    width: 120px;
+    border-bottom: 4px solid #1E90FF;
+    border-radius: 50%;
     margin: 30px auto 60px;
 }
 
-.info_boy_photo {
+.info_boy {
     border: 0px solid #ccc;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 20px;
+    transform: translate(0px, -120%);
+    -webkit-transition: all 1s ease 0.4s;
+     -moz-transition: all 1s ease 0.4s;
+     -o-transition: all 1s ease 0.4s;
+     transition: all 1s ease 0.4s;
+    opacity: 0;
 }
 
+.info_boy._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
 .my_self_info {
+    overflow: hidden;
     margin-bottom: 45px;
     font-size: 18px;
     text-align: left;
@@ -426,35 +517,52 @@ main{
 }
 
 .info_button {
-    font-size: 17px;
-    background: none;
-    color: #6f707e;
-    border: 2px solid #6f707e;
-    border-radius: 5px;
-    padding: 5px 10px;
+    position: relative;
     display: inline-block;
-    cursor: pointer;
-    transition: all 1s ease 0.1s;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5%;
+    background-color: inherit;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .info_button:before {
     content: '';
     background: url(../img/download_icon.svg) center/100% no-repeat;
-    width: 15px;
+    width: 17px;
     height: 15px;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
+}
+
+.info_button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -7.5%;
+    left: -7.5%;
+    width: calc(100% + 15%);
+    height: calc(100% + 15%);
+    border-radius: 5%;
+    background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background-size: 200%;
+    animation: animateborder 3s ease infinite;
 }
 
 .info_button:hover{
     color: #ffffff;
-    background-color: #344051;
-    transition: all 0.2s linear;
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .info_button:active{
-    transform: scale(1.3);
-    transition: all 0.3s ease;
+    transform: scale(1.4);
+    transition: all 0.1s ease;
 }
 /*  Закончился блок .my_info  */
 
@@ -483,13 +591,14 @@ main{
 .main_container h2:after {
     content: "";
     display: block;
-    width: 70px;
-    border-bottom: 4px solid #db8655;
+    width: 120px;
+    border-bottom: 4px solid #1E90FF;
+    border-radius: 50%;
     margin: 30px auto 0px;
 }
 
 
-.abylity_container {
+.abylity_container{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -502,6 +611,50 @@ main{
     width: 100%;
     max-width: 23%;
     margin-bottom: 90px;
+    overflow: hidden;
+    transform: translate( -120%, 0px);
+    opacity: 0;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+
+.ability._active{
+    transform: translate( 0px, 0px);
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+
+.ability._active:nth-child(2){
+    transform: translate( 0px, 0px);
+    -webkit-transition: all 0.8s ease 0.4s;
+    -moz-transition: all 0.8s ease 0.4s;
+    -o-transition: all 0.8s ease 0.4s;
+    transition: all 0.8s ease 0.4s;
+    opacity: 1;
+}
+
+.ability._active:nth-child(3){
+    transform: translate( 0px, 0px);
+    -webkit-transition: all 0.8s ease 0.8s;
+    -moz-transition: all 0.8s ease 0.8s;
+    -o-transition: all 0.8s ease 0.8s;
+    transition: all 0.8s ease 0.8s;
+    opacity: 1;
+}
+
+.ability._active:nth-child(4){
+    transform: translate( 0px, 0px);
+    -webkit-transition: all 0.8s ease 1.2s;
+    -moz-transition: all 0.8s ease 1.2s;
+    -o-transition: all 0.8s ease 1.2s;
+    transition: all 0.8s ease 1.2s;
+    opacity: 1;
 }
 
 .ability img{
@@ -511,11 +664,11 @@ main{
 }
 
 .ability h3{
-    color: #db8655;
+    color: #1E90FF;
     margin-bottom: 10px;
 }
 
-.ability article {
+.ability p {
     font-size: 17px;
     line-height: 1.2;
 }
@@ -635,26 +788,41 @@ main{
     line-height: 1.2;
 }
 
-.case_btn{
-    margin-top: 20px;
-    padding: 10px 40px;
-    border: 1px solid #63b5ae;
-    background-color: #63b5ae;
-    text-transform: uppercase;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
+.case_btn {
+    position: relative;
     display: inline-block;
-    transition: all 0.3s linear;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5%;
+    background-color: inherit;
+    margin-right: 40px;
+    transition: all 1s ease;
+    z-index: 0;
 }
 
-.case_btn:hover{
-    color: #ffffff;
-    background-color: #344051;
-    transition: all 0.3s linear;
+.case_btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -7.5%;
+    left: -7.5%;
+    width: calc(100% + 15%);
+    height: calc(100% + 15%);
+    border-radius: 5%;
+    background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background-size: 200%;
+    animation: animateborder 3s ease infinite;
 }
 
-.case_btn:active{
+
+.case_btn:hover {
+    transform: scale(1.1);
+}
+
+
+.case_btn:active {
     transform: scale(1.3);
     transition: all 0.1s ease;
 }
@@ -664,6 +832,8 @@ main{
 
 /*  Начался блок payment_form  */
 .payment_form{
+    background: url("../img/Neon_Back.jpg");
+    color: white;
 }
 
 .payment_form .main_container{
@@ -749,7 +919,7 @@ main{
 .result_colculate{
     display: flex;
     flex-direction: column;
-    margin: 20px 0 150px;
+    margin: 20px 0px 60px;
 }
 
 .result{
@@ -789,10 +959,18 @@ main{
     text-align: center;
     flex-direction: column;
     margin-bottom: 60px;
+    transform: translate( -120%, 0px);
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
 }
 
 .statistic_1 img{
     margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .statistic_1 span{
@@ -804,6 +982,43 @@ main{
     font-size: 17px;
     text-transform: uppercase;
 }
+
+.statistic_1._active{
+   transform: translate( 0px, 0px);
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+    opacity: 1;
+}
+
+.statistic_1._active:nth-child(2){
+    transform: translate( 0px, 0px);
+    -webkit-transition: all 0.8s ease 0.4s;
+    -moz-transition: all 0.8s ease 0.4s;
+    -o-transition: all 0.8s ease 0.4s;
+    transition: all 0.8s ease 0.4s;
+    opacity: 1;
+}
+
+.statistic_1._active:nth-child(3){
+    transform: translate( 0px, 0px);
+    -webkit-transition: all 0.8s ease 0.8s;
+    -moz-transition: all 0.8s ease 0.8s;
+    -o-transition: all 0.8s ease 0.8s;
+    transition: all 0.8s ease 0.8s;
+    opacity: 1;
+}
+
+.statistic_1._active:nth-child(4){
+    transform: translate( 0px, 0px);
+    -webkit-transition: all 0.8s ease 1.2s;
+    -moz-transition: all 0.8s ease 1.2s;
+    -o-transition: all 0.8s ease 1.2s;
+    transition: all 0.8s ease 1.2s;
+    opacity: 1;
+}
+
 /*  Закончился блок statistic  */
 
 
@@ -855,7 +1070,7 @@ main{
 }
 
 .feed_slider .slick-dots li.slick-active button{
-    background-color: #c96500;
+    background-color: #1E90FF;
 }
 /*  Закончился блок feedback  */
 
@@ -904,7 +1119,7 @@ main{
     margin-bottom: 12px;
 }
 
-#clint_name {
+#client_name {
     height: 35px;
     width: 330px;
     padding: 0 15px;
@@ -912,7 +1127,7 @@ main{
     font-size: 17px;
 }
 
-#clint_email{
+#client_email{
     height: 35px;
     width: 330px;
     padding: 0 15px;
@@ -927,23 +1142,30 @@ main{
     font-size: 17px;
 }
 
-#submit1{
+.sendmail{
     border: 2px solid white;
     border-radius: 5px;
-    padding: 14px 20px 12px;
+    padding: 17px 25px 15px;
     background: transparent;
     color: #ffffff;
-    margin: 25px 0 70px;
+    margin: 40px 40px 70px;
     transition: all 0.3s linear;
+    font-size: 20px;
 }
 
-#submit1:hover{
-    color: orange;
+.sendmail:hover{
+    color: #1E90FF;
     transform: scale(1.1);
-    box-shadow: inset 0px -5px 5px #ffffff;
+    box-shadow: inset 0px -5px 5px #1E90FF;
     transition: all 0.3s linear;
     cursor: pointer;
 }
+
+.sendmail:active {
+    transform: scale(1.3);
+    transition: all 0.1s ease;
+}
+
 
 .social{
     width: 460px;
@@ -969,13 +1191,114 @@ main{
 /* Закончился блок form_to_contacts */
 
 
+
+.hystmodal__window{
+    background: url('../img/modal_back.jpg') center/cover no-repeat;
+    width: 600px;
+    height: 650px;
+}
+
+
+.modal_block{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.modal_text{
+    text-align: center;
+    margin: 30px 40px 20px 40px;
+    color: white;
+    font-size: 20px;
+}
+
+.modal_text_lable{
+    color: white;
+    font-size: 20px;
+}
+.modal_text_lable_{
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#phone_number {
+    text-align: center;
+    background: rgb(59, 103, 158);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 51%, rgba(125, 185, 232, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 51%, rgba(125, 185, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 51%, rgba(125, 185, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b679e', endColorstr='#7db9e8', GradientType=0);
+    width: 250px;
+    height: 30px;
+    margin: 20px;
+    color: white;
+}
+
+
+#massage2 {
+    width: 500px;
+    height: 150px;
+    padding: 15px 15px;
+    resize: none;
+    font-size: 17px;
+    background: rgb(59, 103, 158);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 51%, rgba(125, 185, 232, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 51%, rgba(125, 185, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(59, 103, 158, 1) 0%, rgba(43, 136, 217, 1) 50%, rgba(32, 124, 202, 1) 51%, rgba(125, 185, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b679e', endColorstr='#7db9e8', GradientType=0);
+    color: white;
+}
+
+#modal_btn1{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 17px 25px 15px;
+    background: transparent;
+    color: #ffffff;
+    margin: 40px 0;
+    transition: all 0.3s linear;
+    font-size: 20px;
+}
+
+#modal_btn1:hover{
+    color: #1E90FF;
+    transform: scale(1.1);
+    box-shadow: inset 0px -5px 5px #1E90FF;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+#modal_btn1:active {
+    transform: scale(1.3);
+    transition: all 0.1s ease;
+}
+
+
 /* Начался блок footer */
 .footer{
     overflow: hidden;
 }
 
-.Copyright{
-    background-color: #354051;
+.Copyright {
+    background: -moz-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(30, 87, 153, 1) 19%, rgba(41, 137, 216, 1) 49%, rgba(30, 87, 153, 1) 81%, rgba(30, 87, 153, 1) 99%, rgba(30, 87, 153, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(30, 87, 153, 1) 19%, rgba(41, 137, 216, 1) 49%, rgba(30, 87, 153, 1) 81%, rgba(30, 87, 153, 1) 99%, rgba(30, 87, 153, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30, 87, 153, 1) 0%, rgba(30, 87, 153, 1) 19%, rgba(41, 137, 216, 1) 49%, rgba(30, 87, 153, 1) 81%, rgba(30, 87, 153, 1) 99%, rgba(30, 87, 153, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#001e5799', GradientType=0);
+    /* IE6-9 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -985,6 +1308,10 @@ main{
 }
 
 
+
+
+/* =====  Адаптив! ======*/
+
 @media (max-width: 1440px) {
     .main_items {
         margin: 100% auto;
@@ -992,7 +1319,7 @@ main{
 
 
     .main_block {
-        background: url(../img/boy_main.png) 100% 100%/auto 80% no-repeat, url(../img/backgr_main.jpg) center/cover no-repeat;
+        background: url(../img/boy_main.png) 100% 100%/auto 80% no-repeat, url(../img/Blue_Back.jpg) center/cover no-repeat;
         box-shadow: inset 0px -10px 20px grey;
     }
 
@@ -1023,7 +1350,7 @@ main{
 
 @media (max-width: 992px){
     .main_block {
-        background: url(../img/boy_main.png) 200% 130%/auto 80% no-repeat, url(../img/backgr_main.jpg) center/cover no-repeat;
+        background: url(../img/boy_main.png) 200% 130%/auto 80% no-repeat, url(../img/Blue_Back.jpg) center/cover no-repeat;
         box-shadow: inset 0px -10px 20px grey;
     }
 
@@ -1081,7 +1408,7 @@ main{
 
 @media (max-width: 768px){
     .main_block {
-    background: url(../img/boy_main.png) 170% 100%/auto 70% no-repeat , url(../img/backgr_main.jpg) center/cover no-repeat;
+    background: url(../img/boy_main.png) 170% 100%/auto 70% no-repeat , url(../img/Blue_Back.jpg) center/cover no-repeat;
     box-shadow: inset 0px -10px 20px grey;
 }
 
@@ -1135,12 +1462,12 @@ main{
         width: 97%;
     }
 
-    #clint_name{
+    #client_name{
         display: inline-block;
         width: 47%;
         margin: 0 auto;
     }
-    #clint_email{
+    #client_email{
         display: inline-block;
         width: 47%;
         margin: 0 auto;
@@ -1181,12 +1508,12 @@ main{
         width: 95%;
         margin: 0 auto;
     }
-    #clint_name{
+    #client_name{
         display: inline-block;
         width: 47%;
         margin: 0 auto;
     }
-    #clint_email{
+    #client_email{
         display: inline-block;
         width: 47%;
         margin: 0 auto;
