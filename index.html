@@ -3,17 +3,19 @@
 
 <head>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/hystmodal.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Алексей Веб-Разработчик</title>
+    <title>Алексей Полукаров</title>
 </head>
 
 <body>
 
-   <div id="page-preloader" class="preloader">
-       <div class="loader"></div>
-   </div>
+    <div id="page-preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
 
 
 
@@ -22,10 +24,10 @@
         <nav class="navig">
             <div class="container">
                 <div class="logo">
-                    <a href="#main_block">Алексей ()(*_*)()</a>
+                    <a href="#main_block">Алексей Полукаров</a>
                 </div>
                 <div class="navig_list">
-                    <a class="nav_item" href="#my_info">Обо Мне</a>
+                    <a class="nav_item active" href="#my_info">Обо Мне</a>
                     <a class="nav_item" href="#my_ability">Услуги</a>
                     <a class="nav_item" href="#Case">Кейсы</a>
                     <a class="nav_item" href="#payment_form">Прайс</a>
@@ -53,38 +55,31 @@
     <!--  Main  -->
     <main>
         <!--  section class main  -->
-        <section class="main_block" id="main_block">
+        <section class="main_block section" id="main_block">
             <div class="title__container">
                 <div class="main_items">
-                    <h1>Привет <br> Я Алексей :) </h1>
+                    <h1>Создаю живые сайты, для вашего бизнеса!</h1>
                     <h4>Фулл Стэк Веб-Разработчик</h4>
-                    <a class="main_btn" href="#">Обо мне</a>
-                    <a class="main_btn" href="#">Мои работы</a>
+                    <a class="main_btn" href="#my_info">Обо мне</a>
+                    <a class="main_btn" href="#Case">Мои работы</a>
                 </div>
             </div>
         </section>
         <!--  section class main  завершился  -->
 
         <!--  section class my_info  -->
-        <section class="my_info" id="my_info">
+        <section class="my_info section" id="my_info">
             <div class="container_self">
-                <h2>Обо мне</h2>
-                <div class="info_boy">
+                <h2 class="title_my_info _anim-items _anim-no-hide">Обо мне</h2>
+                <div class="info_boy _anim-items _anim-no-hide">
                     <img class="info_boy_photo" src="img/boy_photo.png" alt="Photo">
                 </div>
-<<<<<<< HEAD
                 <div class="my_self_info _anim-items">
-                    <p class="_anim-show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus exercitationem eligendi minus esse saepe, iure alias iusto quo perferendis reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nostrum doloribus ad minus beatae doloremque sapiente laborum, nobis quasi consectetur!</p>
+                    <p class="_anim-show">В своей карьере я прошёл путь от IT-специалиста технической поддержки, а затем инженера технической поддержки в крупной компании, которая производит своё программное обеспечение. Внимательно выслушивая проблемы клиентов, помогая справляться с любыми трудностями, с которыми ко мне обращались. Прилагая максимум усилий, для наивысшего уровня своей работы. Чем искренне горжусь.</p>
                 </div>
                 <div class="my_self_info _anim-items">
-                    <p class="_anim-show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus exercitationem eligendi minus esse saepe, iure alias iusto quo perferendis reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nostrum doloribus ad minus beatae doloremque sapiente laborum, nobis quasi consectetur!</p>
+                    <p class="_anim-show">И дошёл до текущего уровня навыков, где технический бэкграунд принёс мне много пользы для создания качественных сайтов. Я искренне рад тому, что обучился веб-разработке. С удовольствием создам для вас приятный глазу, живой сайт для любой деятельности.</p>
                 </div>
-=======
-                <article class="my_self_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus exercitationem eligendi minus esse saepe, iure alias iusto quo perferendis reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nostrum doloribus ad minus beatae doloremque sapiente laborum, nobis quasi consectetur!
-                </article>
-                <article class="my_self_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus exercitationem eligendi minus esse saepe, iure alias iusto quo perferendis reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nostrum doloribus ad minus beatae doloremque sapiente laborum, nobis quasi consectetur!
-                </article>
->>>>>>> parent of 9290f68 (Add files via upload)
                 <div class="info_button_cont">
                     <a class="info_button">Скачать резюме</a>
                 </div>
@@ -93,29 +88,29 @@
         <!--  section class my_info завершился  -->
 
         <!--  section class my_ability  -->
-        <section class="my_ability" id="my_ability">
+        <section class="my_ability section" id="my_ability">
             <div class="main_container">
-                <h2>Что я умею</h2>
+                <h2 class="myMainAbility _anim-items animate__animated">Что я умею</h2>
                 <div class="abylity_container">
-                    <div class="ability">
-                        <img src="img/Laptop.svg" alt="icon">
-                        <h3>Веб-дизайн</h3>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore ipsum deleniti quam minus qui sint, rem asperiores ratione enim.</article>
+                    <div class="ability _anim-items">
+                        <img class="ability_img" src="img/Laptop.svg" alt="icon">
+                        <h3 class="ability_name">Веб-дизайн</h3>
+                        <p class="ability_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore ipsum deleniti quam minus qui sint, rem asperiores ratione enim.</p>
                     </div>
-                    <div class="ability">
-                        <img src="img/Sighn.svg" alt="icon">
-                        <h3>Разработка</h3>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto necessitatibus quaerat est odit, ad quidem optio reiciendis sint dolorum?.</article>
+                    <div class="ability _anim-items">
+                        <img class="ability_img" src="img/Sighn.svg" alt="icon">
+                        <h3 class="ability_name">Разработка</h3>
+                        <p class="ability_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore ipsum deleniti quam minus qui sint, rem asperiores ratione enim.</p>
                     </div>
-                    <div class="ability">
-                        <img src="img/Rocket.svg" alt="icon">
-                        <h3>CEO-Оптимизация</h3>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio molestiae ducimus saepe quis aliquam aperiam cumque doloribus magni officiis dolores.</article>
+                    <div class="ability _anim-items">
+                        <img class="ability_img" src="img/Rocket.svg" alt="icon">
+                        <h3 class="ability_name">CEO-Оптимизация</h3>
+                        <p class="ability_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore ipsum deleniti quam minus qui sint, rem asperiores ratione enim.</p>
                     </div>
-                    <div class="ability">
-                        <img src="img/laud.svg" alt="icon">
-                        <h3>Маркетинг</h3>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et facere, ad dolore, alias tempora porro quaerat nemo, eum ipsam fuga dicta.</article>
+                    <div class="ability _anim-items">
+                        <img class="ability_img" src="img/laud.svg" alt="icon">
+                        <h3 class="ability_name">Маркетинг</h3>
+                        <p class="ability_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate inventore ipsum deleniti quam minus qui sint, rem asperiores ratione enim.</p>
                     </div>
                 </div>
             </div>
@@ -123,18 +118,12 @@
         <!--  section class my_ability заканчивается -->
 
         <!--    section class Case    -->
-        <section class="Case" id="Case">
+        <section class="Case section" id="Case">
             <div class="main_container">
-<<<<<<< HEAD
                <article class="case_main">
                 <h2 class="MyCases _anim-items animate__animated">Кейсы</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur assumenda, sapiente eaque totam. Nisi ad voluptas natus provident, velit totam labore officiis voluptatem numquam quam.</p>
                 </article>
-=======
-                <h2>Кейсы</h2>
-                <article class="case_main">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur assumenda, sapiente eaque totam. Nisi ad voluptas natus provident, velit totam labore officiis voluptatem numquam quam.</article>
-
->>>>>>> parent of 9290f68 (Add files via upload)
                 <div class="slider">
                     <div class="img_slide">
                         <img src="img/Case1.jpg" alt="slide">
@@ -149,12 +138,8 @@
                             <div class="case_text">
                                <article>
                                 <h3>Название Проекта</h3>
-<<<<<<< HEAD
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</p>
                                 </article>
-=======
-                                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                             </div>
                         </div>
                     </div>
@@ -171,12 +156,8 @@
                             <div class="case_text">
                                <article>
                                 <h3>Название Проекта</h3>
-<<<<<<< HEAD
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</p>
                                 </article>
-=======
-                                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                             </div>
                         </div>
                     </div>
@@ -193,12 +174,8 @@
                             <div class="case_text">
                                <article>
                                 <h3>Название Проекта</h3>
-<<<<<<< HEAD
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</p>
                                 </article>
-=======
-                                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                             </div>
                         </div>
                     </div>
@@ -215,12 +192,8 @@
                             <div class="case_text">
                                <article>
                                 <h3>Название Проекта</h3>
-<<<<<<< HEAD
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</p>
                                 </article>
-=======
-                                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                             </div>
                         </div>
                     </div>
@@ -237,12 +210,8 @@
                             <div class="case_text">
                                <article>
                                 <h3>Название Проекта</h3>
-<<<<<<< HEAD
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</p>
                                 </article>
-=======
-                                <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam maiores quod assumenda aliquam dolores obcaecati, maxime labore aut aliquid, aspernatur quae eum neque non. Dicta harum nobis alias error. Ipsam a, distinctio, ut aspernatur esse architecto dolores corporis excepturi laborum ad doloremque molestias voluptas provident iusto. Error quisquam, eos eius.</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                             </div>
                         </div>
                     </div>
@@ -252,30 +221,30 @@
         <!--    section class Case заканчивается    -->
 
         <!--   section class payment_form    -->
-        <section class="payment_form" id="payment_form">
+        <section class="payment_form section" id="payment_form">
             <div class="main_container">
                 <h2>Расчёт стоимости</h2>
                 <div class="select_items">
                     <h3>Тип сайта</h3>
                     <select class="site_ty" name="site_type" id="site_type1">
                         <option data-time="0" value="0"> Не выбрано </option>
-                        <option data-time="2" value="500" >Лендинг</option>
-                        <option data-time="3" value="1000" >Визитка</option>
-                        <option data-time="15" value="4000" >Магазин</option>
+                        <option data-time="2" value="500">Лендинг</option>
+                        <option data-time="3" value="1000">Визитка</option>
+                        <option data-time="15" value="4000">Магазин</option>
                     </select>
                     <h3>Дизайн</h3>
                     <select class="site_ty" name="site_type" id="site_type2">
                         <option data-time="0" value="0"> Не выбрано </option>
-                        <option data-time="2" value="1000" >Минималистичный</option>
-                        <option data-time="4" value="2000" >Функциональный</option>
-                        <option data-time="10" value="5000" >Свой</option>
+                        <option data-time="2" value="1000">Минималистичный</option>
+                        <option data-time="4" value="2000">Функциональный</option>
+                        <option data-time="10" value="5000">Свой</option>
                     </select>
                     <h3>Адаптивность</h3>
                     <select class="site_ty" name="site_type" id="site_type3">
                         <option data-time="0" value="0"> Не выбрано </option>
-                        <option data-time="1" value="1000" >Базовый вариант</option>
-                        <option data-time="2" value="1500" >Углублённый</option>
-                        <option data-time="4" value="2000" >Все устройства</option>
+                        <option data-time="1" value="1000">Базовый вариант</option>
+                        <option data-time="2" value="1500">Углублённый</option>
+                        <option data-time="4" value="2000">Все устройства</option>
                     </select>
                 </div>
                 <div class="result_colculate">
@@ -301,49 +270,29 @@
         <!--    section class payment_form  заканчивается    -->
 
         <!--    section class payment_form   -->
-        <section class="statistic" id="statistic">
+        <section class="statistic section" id="statistic">
             <div class="main_container">
-                <h2>Немного Статистики</h2>
+                <h2 class="someStatistic _anim-items animate__animated">Немного Статистики</h2>
                 <div class="statistic_info">
-                    <div class="statistic_1">
+                    <div class="statistic_1 _anim-items">
                         <img src="img/Smile.svg" alt="icon">
-<<<<<<< HEAD
                         <span id="result3">9158</span>
                         <p>Счастливых клиентов</p>
-=======
-                        <span id="result3">0</span>
-                        <article>Счастливых клиентов</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                     </div>
-                    <div class="statistic_1">
+                    <div class="statistic_1 _anim-items">
                         <img src="img/Skobki.svg" alt="icon">
-<<<<<<< HEAD
                         <span id="result4">20458</span>
                         <p>Часов Работы</p>
-=======
-                        <span id="result4">0</span>
-                        <article>Часов Работы</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                     </div>
-                    <div class="statistic_1">
+                    <div class="statistic_1 _anim-items">
                         <img src="img/Galochka.svg" alt="icon">
-<<<<<<< HEAD
                         <span id="result5">6798</span>
                         <p>Проектов Завершено</p>
-=======
-                        <span id="result5">0</span>
-                        <article>Проектов Завершено</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                     </div>
-                    <div class="statistic_1">
+                    <div class="statistic_1 _anim-items">
                         <img src="img/cup.svg" alt="icon">
-<<<<<<< HEAD
                         <span id="result6">15</span>
                         <p>Наград Получено</p>
-=======
-                        <span id="result6">0</span>
-                        <article>Наград Получено</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                     </div>
                 </div>
             </div>
@@ -351,13 +300,12 @@
         <!--    section class payment_form заканчивается    -->
 
         <!--   section class feedback     -->
-        <section class="feedback" id="feedback">
+        <section class="feedback section" id="feedback">
             <div class="container_self">
-                <h2>Отзывы</h2>
+                <h2 class="feedbacks _anim-items animate__animated">Отзывы</h2>
                 <div class="feed_slider">
                     <div class="feed_obj">
                         <img src="img/feedback_man1.jpg" alt="Photo">
-<<<<<<< HEAD
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, amet odit. Ut, neque magnam aperiam iure at. Ex sequi, ullam aspernatur veritatis esse provident natus facilis. Distinctio ea cum quidem!</p>
                         <p><b>Александр</b>, IT-директор УФАС</p>
                     </div>
@@ -370,20 +318,6 @@
                         <img src="img/feedback_man1.jpg" alt="Photo">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, amet odit. Ut, neque magnam aperiam iure at. Ex sequi, ullam aspernatur veritatis esse provident natus facilis. Distinctio ea cum quidem!</p>
                         <p><b>Александр</b>, IT-директор УФАС</p>
-=======
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, amet odit. Ut, neque magnam aperiam iure at. Ex sequi, ullam aspernatur veritatis esse provident natus facilis. Distinctio ea cum quidem!</article>
-                        <article><b>Александр</b>, IT-директор УФАС</article>
-                    </div>
-                    <div class="feed_obj">
-                        <img src="img/feedback_man1.jpg" alt="Photo">
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, amet odit. Ut, neque magnam aperiam iure at. Ex sequi, ullam aspernatur veritatis esse provident natus facilis. Distinctio ea cum quidem!</article>
-                        <article><b>Александр</b>, IT-директор УФАС</article>
-                    </div>
-                    <div class="feed_obj">
-                        <img src="img/feedback_man1.jpg" alt="Photo">
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, amet odit. Ut, neque magnam aperiam iure at. Ex sequi, ullam aspernatur veritatis esse provident natus facilis. Distinctio ea cum quidem!</article>
-                        <article><b>Александр</b>, IT-директор УФАС</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                     </div>
                 </div>
             </div>
@@ -391,9 +325,9 @@
         <!--    section class feedback  заканчивается    -->
 
         <!--   section class form_to_contacts     -->
-        <section class="form_to_contacts" id="form_to_contacts">
+        <section class="form_to_contacts section" id="form_to_contacts">
             <div class="container_self">
-                <h2>Мои контакты</h2>
+                <h2 class="myContacts _anim-items animate__animated">Мои контакты</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ea facere architecto dolorum id ipsam accusamus totam, est nam recusandae.</p>
                 <div class="contacts_my">
                     <div class="contact_address">
@@ -402,34 +336,22 @@
                     </div>
                     <div class="contact_email">
                         <img src="img/konvert.svg" alt="icon">
-<<<<<<< HEAD
                         <a href="mailto:AlleroWalker@gmail.com"><br>AlleroWalker@gmail.com</a>
-=======
-                        <article>info@companyname.com</article>
->>>>>>> parent of 9290f68 (Add files via upload)
                     </div>
                     <div class="contact_phone">
                         <img src="img/phone.svg" alt="icon">
-                        <article>+79999990000</article>
+                        <a href="tel:+7300300400"><br>+7300300400</a>
                     </div>
                 </div>
                 <h3>Оставьте мне сообщение</h3>
-                <form action="#">
+                <form action="php/mail1.php" method="post" autocomplete="off" id="massage_me">
                     <div class="form_text">
-<<<<<<< HEAD
                         <input type="text" name="client_name_" id="client_name" placeholder="Ваше имя">
                         <input type="email" name="client_email_" id="client_email" placeholder="Email">
                     </div>
                     <textarea name="massage_" id="massage1" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
                     <input class="sendmail" type="submit" id="submit1" value="Отправить">
                     <input class="sendmail" type="submit" id="submit2" value="Быстрый ответ" data-hystmodal="#myModal">
-=======
-                        <input type="text" name="clint_name" id="clint_name" placeholder="Ваше имя">
-                        <input type="text" name="clint_email" id="clint_email" placeholder="Email">
-                    </div>
-                    <textarea name="massage" id="massage1" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
-                    <input type="submit" id="submit1" value="Отправить">
->>>>>>> parent of 9290f68 (Add files via upload)
                     <div class="social">
                         <a href="#" class="social_item">
                             <img src="img/fb.svg" alt="icon">
@@ -457,7 +379,6 @@
     </main>
     <!--  Main завершился  -->
 
-<<<<<<< HEAD
     <!--  Модальное окно!  -->
     <div class="hystmodal" id="myModal" aria-hidden="true">
         <div class="hystmodal__wrap">
@@ -476,15 +397,13 @@
                         </p>
                         <h2 class="modal_text_lable_"> Укажите из какого источника вы узнал обо мне:</h2>
                         <textarea name="massage2_" id="massage2"></textarea>
-                        <input type="submit" id="modal_btn1" name="modal_btn1_" data-hystclose>
+                        <input type="submit" id="modal_btn1" name="modal_btn1_">
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <!--  Модальное закончилось!  -->
-=======
->>>>>>> parent of 9290f68 (Add files via upload)
 
     <!--  Footer  -->
     <footer class="footer">
@@ -492,15 +411,18 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d812908.2750594585!2d38.237230444377765!3d55.752194389163634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1625600656310!5m2!1sru!2sua" width="1920" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="Copyright">
-            <span>Copyright©2021 by Алексей ()(*_*)()</span>
+            <span>Copyright©2021 by Allero Walker</span>
         </div>
     </footer>
     <!--  Footer завершился  -->
 
     <!-- =============== Скрипты ===============  -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/hystmodal.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/Preload.js"></script>
 </body>
+
 </html>
