@@ -727,7 +727,7 @@ main{
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: url('../img/Case_back.jpg') center/cover no-repeat;
+    background: url('../img/Case_Back.jpg') center/cover no-repeat;
     color: #fff;
 }
 
